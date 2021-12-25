@@ -1,0 +1,51 @@
+1.Print odd numbers in an array
+
+let a = [1,2,3,4,5]
+let res = a.filter(row => row %2 !== 0 )
+console.log(res)
+-----------------------------------
+
+2. Convert all the strings to title caps in a string array
+
+let array = ["hello","guvi","coding"]
+let result = array.map(elm=>  elm.charAt(0).toUpperCase()+elm.substr(1))
+console.log(result);
+
+----------------------------
+
+3.Sum of all numbers in an array
+
+ let a = [1,2,3,4,5]
+let sum = a.reduce((acc, ele) => {
+    return acc + ele
+
+} )
+console.log(sum)
+
+-----------------------------------
+4.Return all the prime numbers in an array
+
+let number=[1,2,3,4,5,6,7,8,9,10]
+let primeNumbers = number.filter((elm)=> {
+    for(let i = 2; i < elm; i++){
+        if(elm%i === 0) return false;
+    }
+    return elm > 1;
+})
+console.log(primeNumbers);
+
+
+--------------------------------------
+
+5. Return all the palindromes in an array
+
+let palindromes = ["AnnA","guvi","hello","121"]
+let palindromesArr = palindromes.filter(elm=> elm === elm.split("").reverse().join(""))
+console.log(palindromesArr);
+
+--------------------------------------
+
+
+
+
+
